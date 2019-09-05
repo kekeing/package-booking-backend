@@ -4,5 +4,5 @@ import com.example.backendbymyself.Modle.PackageInfo;
 import org.springframework.data.jpa.repository.JpaRepository;
 
 public interface PackageInfoRepository extends JpaRepository<PackageInfo,Integer> {
-
+    PackageInfo findByWaybillNumber(String waybillNumber);
 }

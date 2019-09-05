@@ -18,4 +18,5 @@ public class PackageInfoService {
     public List<PackageInfo> findAll(){return packageInfoRepository.findAll();}
     public void savePackageInfo(PackageInfo packageInfo){packageInfoRepository.save(packageInfo);}
     public void deletePackageInfo(PackageInfo packageInfo){packageInfoRepository.delete(packageInfo);}
+    public PackageInfo findPackageInfoByWaybillNumber(String waybillNumber){return packageInfoRepository.findByWaybillNumber(waybillNumber);}
 }

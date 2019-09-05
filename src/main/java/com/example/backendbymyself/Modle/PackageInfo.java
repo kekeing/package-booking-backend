@@ -19,6 +19,26 @@ public class PackageInfo {
 
     private String weight;
 
+    private String postdate;
+
+    private String state;
+
+    public String getPostdate() {
+        return postdate;
+    }
+
+    public void setPostdate(String postdate) {
+        this.postdate = postdate;
+    }
+
+    public String getState() {
+        return state;
+    }
+
+    public void setState(String state) {
+        this.state = state;
+    }
+
     public int getId() {
         return id;
     }
